@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Download iCoPS App</title>
+
+<script>
+
+window.onload = function () {
+
+    var android =
+    "https://play.google.com/store/apps/details?id=com.keralapolice.icops";
+
+    var ios =
+    "https://apps.apple.com/in/app/icops/id123456789";
+
+
+    var ua = navigator.userAgent || navigator.vendor;
+
+
+    if (/android/i.test(ua)) {
+
+        window.location.href = android;
+
+    } 
+    else if (/iPhone|iPad|iPod/i.test(ua)) {
+
+        window.location.href = ios;
+
+    }
+    else {
+
+        document.getElementById("links").style.display="block";
+
+    }
+
+}
+
+</script>
+
+</head>
+
+
+<body>
+
+<div id="links" style="display:none;text-align:center">
+
+<h2>Download iCoPS Mobile App</h2>
+
+<br>
+
+<a href="https://play.google.com/store/apps/details?id=com.keralapolice.icops">
+Android App
+</a>
+
+<br><br>
+
+<a href="https://apps.apple.com/in/app/icops/id123456789">
+iPhone App
+</a>
+
+</div>
+
+</body>
+
+</html>
